@@ -343,7 +343,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-18T15:45:36+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-18T15:50:53+08:00">
                 2017-03-18
               </time>
             
@@ -412,18 +412,15 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/18/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -573,73 +570,14 @@
 
       
         
-          
-            <h1 id="推荐算法1"><a href="#推荐算法1" class="headerlink" title="推荐算法1"></a>推荐算法1</h1><h2 id="一、基于内容content-based"><a href="#一、基于内容content-based" class="headerlink" title="一、基于内容content based"></a>一、基于内容content based</h2><h3 id="引入item属性的ceontent-based推荐"><a href="#引入item属性的ceontent-based推荐" class="headerlink" title="引入item属性的ceontent based推荐"></a>引入item属性的ceontent based推荐</h3><p>==框架实现流程==：</p>
-<p><img src="http://p1.bqimg.com/4851/758a43023ddc65e0.png" alt="image"></p>
-<p><strong>输入items</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">正排表</div><div class="line"></div><div class="line">movieId1 战争、</div><div class="line">movieId2 喜剧、</div></pre></td></tr></table></figure>
-<p><strong>内容分析</strong></p>
-<p>正排表 –&gt; 倒排表</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">倒排表</div><div class="line"></div><div class="line">战争 movieId1 、movieId3 。。。</div><div class="line">喜剧 movieId2 、movieId4 。。。</div></pre></td></tr></table></figure>
-<p><strong>优缺点</strong></p>
-<p>无个性化</p>
-<h3 id="引入User属性的ceontent-based推荐"><a href="#引入User属性的ceontent-based推荐" class="headerlink" title="引入User属性的ceontent based推荐"></a>引入User属性的ceontent based推荐</h3><p>==框架实现流程==：</p>
-<p><img src="http://p1.bqimg.com/4851/35e720f306049688.png" alt="image"></p>
-<p><strong>优缺点</strong>：</p>
-<p>++马太效应++</p>
-<h2 id="二、基于协同过滤collaboration-Filtering"><a href="#二、基于协同过滤collaboration-Filtering" class="headerlink" title="二、基于协同过滤collaboration Filtering"></a>二、基于协同过滤collaboration Filtering</h2><h2 id="三、实战之倒排表（基于content-based）"><a href="#三、实战之倒排表（基于content-based）" class="headerlink" title="三、实战之倒排表（基于content based）"></a>三、实战之倒排表（基于content based）</h2><blockquote>
-<p>分隔符^A的输入方法，ctrl+v–crtl+A</p>
-</blockquote>
-<ol>
-<li>输入items：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//音乐列表：id + name</div><div class="line">8920397333      王铮亮 时间都去哪了 《私人订制》插曲</div><div class="line">8920408333      Locked Out Of Heaven 音乐高清视频MV</div><div class="line">8920422333      影视-心上人啊快给我力量KTV（电影《神圣的使命》插曲</div><div class="line">8920491333      068_奥特曼</div><div class="line">8920492333      影视-幸福不会从天降KTV（电影《我们村里的年轻人》插</div><div class="line">8920527333      邓紫棋 GEM 2013 X.X.X. LIVE 演唱会 【全场高清】</div><div class="line">8920529333      067_外婆的澎湖湾</div><div class="line">8920588333      卓依婷-纸飞机</div></pre></td></tr></table></figure>
-<ol>
-<li>内容分析</li>
-</ol>
-<ul>
-<li><p>step1： 对name进行中文分词、关键词提取，根据TF-IDF</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//利用jieba分词工具</div><div class="line">#encoding=utf-8</div><div class="line">import jieba</div><div class="line">import jieba.posseg</div><div class="line">import jieba.analyse</div><div class="line"></div><div class="line">s = &quot;王铮亮 时间都去哪了 《私人订制》插曲&quot;</div><div class="line"></div><div class="line">for x, w in jieba.analyse.extract_tags(s,         withWeight=True):</div><div class="line">    print(&apos;%s %s&apos; % (x, w))</div><div class="line"></div><div class="line">// 输出</div><div class="line">----------------------------------------</div><div class="line">TF-IDF</div><div class="line">----------------------------------------</div><div class="line">铮亮 2.64150609428</div><div class="line">订制 2.1209681572</div><div class="line">插曲 1.94525807642</div><div class="line">私人 1.3649737576</div><div class="line">时间 0.815907926492</div></pre></td></tr></table></figure>
-</li>
-<li><p>step2： 生成正排表</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">    8920397333  王铮亮 时间都去哪了 《私人订制》插曲    铮亮2.64150609428</div><div class="line">订制2.1209681572</div><div class="line">插曲1.94525807642</div><div class="line">私人1.3649737576</div><div class="line">时间0.815907926492</div><div class="line">    ...</div></pre></td></tr></table></figure>
-</li>
-<li><p>setp3： 生成倒排表</p>
-<p>  ==map-reduce思想==： 正排–&gt;倒排</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//map; token=关键词，map输出按toker排序</div><div class="line">print &apos;\t&apos;.join([token, music_name, weight])</div><div class="line"></div><div class="line">// 输出</div><div class="line">----------------------------------------</div><div class="line">铮亮  王铮亮 时间都去哪了 《私人订制》插曲  2.64150609428</div><div class="line">铮亮  音乐资讯、【720P】王铮亮Reno-迷悟MV(完整HD版)  1.32075304714</div><div class="line">。。。</div><div class="line">----------------------------------------</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">//reduce；</div><div class="line">相同token，按weight排序后，进行join起来</div><div class="line"></div><div class="line">def reducer_func():</div><div class="line">    cur_token = None</div><div class="line">    m_list = []</div><div class="line">    for line in sys.stdin:</div><div class="line">        ss = line.strip().split(&apos;\t&apos;)</div><div class="line">        if len(ss) != 3:</div><div class="line">            continue</div><div class="line">        token = ss[0].strip()</div><div class="line">        name = ss[1].strip()</div><div class="line">        weight = float(ss[2].strip())</div><div class="line"></div><div class="line">        if cur_token == None:</div><div class="line">            cur_token = token</div><div class="line">        if cur_token != token:</div><div class="line">            final_list = sorted(m_list, key=lambda x: x[1], reverse=True)</div><div class="line">            print &apos;\t&apos;.join([cur_token, &apos;^A&apos;.join([&apos;^B&apos;.join([name_weight[0], str(name_weight[1])]) for name_weight in final_list])])</div><div class="line">            cur_token = token</div><div class="line">            m_list = []</div><div class="line">            </div><div class="line">        m_list.append((name, weight))</div><div class="line"></div><div class="line">    final_list = sorted(m_list, key=lambda x: x[1], reverse=True)</div><div class="line">    print &apos;\t&apos;.join([cur_token, &apos;^A&apos;.join([&apos;^B&apos;.join([name_weight[0], str(name_weight[1])]) for name_weight in final_list])])</div></pre></td></tr></table></figure>
-
-Results:
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//关键词+关键词在不同歌曲中的TF-IDF值排序</div><div class="line">铮亮    王铮亮 时间都去哪了 《私人订制》插曲^B2.64150609428^A最新音乐资讯、【720P】王铮亮Reno-迷悟MV(完整HD版)^B1.32075304714</div><div class="line">私人    王铮亮 时间都去哪了 《私人订制》插曲^B1.3649737576^A解放 (电影《私人订制》主题曲)^B1.3649737576</div><div class="line">。。。</div></pre></td></tr></table></figure>
-</code></pre><ol>
-<li>计算任意两个item之间的相似度得分</li>
-</ol>
-<p><strong>倒排表的物理意义：</strong></p>
-<p>不同的item被同一个token关联起来，且每一个item的分数代表着，该token所能决定该item的能力。分数越高，说明这个token越能代表这个item所要表达的含义。</p>
-<p>因此，我们把相同token，关联起来的任意两个item的得分相乘，得到的便是这两个item的相似度了。</p>
-<p><strong>以上面两条倒排表记录，来做个例子：</strong></p>
-<ul>
-<li>token1–&gt;==铮亮==  </li>
-</ul>
-<p>item1–&gt;{ ++王==铮亮== 时间都去哪了 《私人订制》插曲++ }</p>
-<p>score1–&gt;2.64150609428</p>
-<p>item2–&gt;{ ++最新音乐资讯、【720P】王==铮亮==Reno-迷悟MV(完整HD版)++ }</p>
-<p>score2–&gt;1.32075304714</p>
-<p>那么item1 和 item2的相似度是score1*score2</p>
-<ul>
-<li>token2： ==私人==</li>
-</ul>
-<p>同理可计算：</p>
-<p>++王铮亮 时间都去哪了 《==私==人订制》插曲++</p>
-<p>++解放 (电影《==私人==订制》主题曲)++</p>
-<p>相似度得分：</p>
-<p>1.3649737576 <em> 1.3649737576 &lt; 2.64150609428 </em> 1.32075304714</p>
-<p>因此根据分数排名可知：</p>
-<p>++王铮亮 时间都去哪了 《私人订制》插曲++ 与  ++最新音乐资讯、【720P】王==铮亮==Reno-迷悟MV(完整HD版)++  更为相似。</p>
-
-          
+          <h1 id="推荐算法1"><a href="#推荐算法1" class="headerlink" title="推荐算法1"></a>推荐算法1</h1><h2 id="一、基于内容content-based"><a href="#一、基于内容content-based" class="headerlink" title="一、基于内容content based"></a>一、基于内容content based</h2><h3 id="引入item属性的ceontent-based推荐"><a href="#引入item属性的ceontent-based推荐" class="headerlink" title="引入item属性的ceontent based推荐"></a>引入item属性的ceontent based推荐</h3><p>==框架实现流程==：</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/18/推荐算法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -739,7 +677,7 @@ Results:
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
